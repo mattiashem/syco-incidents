@@ -14,12 +14,12 @@ def hello():
 
 @app.route("/fp")
 def fp():
-    #result = send_campain()
+    result = send_campain()
     return render_template('fp.html',result=result)
 
 @app.route("/fp-ok")
 def fp_ok():
-    #result = send_campain_resolved()
+    result = send_campain_resolved()
     return render_template('fp.html',result=result)
 
 
