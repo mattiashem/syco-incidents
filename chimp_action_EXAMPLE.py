@@ -1,3 +1,8 @@
+#Rename this file and remove the EXAMLE to make it work.
+# Then add you function and settins in this file
+
+
+
 def get_mailchimp_api():
 	    return mailchimp.Mailchimp('XXXXXXXXXXXXXXXXXX') #your api key
 
