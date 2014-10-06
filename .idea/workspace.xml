@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="180c002e-f90e-4bdf-bbae-cfaf3c04b652" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chimp_action_EXAMPLE.py" afterPath="$PROJECT_DIR$/chimp_action_EXAMPLE.py" />
-    </list>
+    <list default="true" id="180c002e-f90e-4bdf-bbae-cfaf3c04b652" name="Default" comment="" />
     <ignored path="syco-incidents.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
