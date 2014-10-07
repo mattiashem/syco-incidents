@@ -1,8 +1,8 @@
-import mailchimp
+
 from flask import Flask
 from flask import render_template
 from chimp_action import *
-import datetime
+
 app = Flask(__name__)
 
 
@@ -14,76 +14,75 @@ def hello():
 
 @app.route("/fp")
 def fp():
-    result = "Error"
+    result = send_campain('2e7142ac33',"Farepayment")
     return render_template('fp.html',result=result)
 
 @app.route("/fp_ok")
 def fp_ok():
-    result = "Error"
-    test()
+    result = send_campain_resolved('2e7142ac33',"Farepayment")
     return render_template('fp.html',result=result)
 
 
 @app.route("/rf")
 def rf():
-    result = "Error"
+    result = send_campain('2e7142ac33','Rentalfront')
     return render_template('fp.html',result=result)
 
 @app.route("/rf_ok")
 def rf_ok():
-    result = "Error"
+    result = send_campain_resolved('2e7142ac33',"Rentalfront")
     return render_template('fp.html',result=result)
 
 @app.route("/eff")
 def eff():
-    result = "Error"
+    result = send_campain('2e7142ac33','EFF')
     return render_template('fp.html',result=result)
 
 @app.route("/eff_ok")
 def eff_ok():
-    result = "Error"
+    result = send_campain_resolved('2e7142ac33',"EFF")
     return render_template('fp.html',result=result)
 
 
 @app.route("/pbk")
 def pbk():
-    result = "Error"
+    result = send_campain('2e7142ac33','PBK')
     return render_template('fp.html',result=result)
 
 @app.route("/pbk_ok")
 def pbk_ok():
-    result = "Error"
+    result = send_campain_resolved('2e7142ac33',"PBK")
     return render_template('fp.html',result=result)
 
 
 @app.route("/webres")
 def webres():
-    result = "Error"
+    result = send_campain('2e7142ac33','Webres')
     return render_template('fp.html',result=result)
 
 @app.route("/webres_ok")
 def webres_ok():
-    result = "Error"
+    result = send_campain_resolved('2e7142ac33',"Webres")
     return render_template('fp.html',result=result)
 
 @app.route("/static")
 def static_e():
-    result = "Error"
+    result = send_campain('2e7142ac33','Static')
     return render_template('fp.html',result=result)
 
 @app.route("/static_ok")
 def static_ok():
-    result = "Error"
+    result = send_campain_resolved('2e7142ac33',"Static")
     return render_template('fp.html',result=result)
 
 @app.route("/all")
 def all():
-    result = "Error"
+    result = send_campain('2e7142ac33','All System')
     return render_template('fp.html',result=result)
 
 @app.route("/all_ok")
 def all_ok():
-    result = "Error"
+    result = send_campain_resolved('2e7142ac33',"All System")
     return render_template('fp.html',result=result)
 
 

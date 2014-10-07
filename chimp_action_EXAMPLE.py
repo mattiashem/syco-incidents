@@ -4,7 +4,7 @@
 
 
 def get_mailchimp_api():
-	    return mailchimp.Mailchimp('XXXXXXXXXXXXXXXXXX') #your api key
+	    return mailchimp.Mailchimp('xxxxxxxxxxxxxxxxxxx') #your api key
 
 #Create an campain
 def send_campain():
