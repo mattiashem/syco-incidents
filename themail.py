@@ -14,23 +14,23 @@ def hello():
 
 @app.route("/fp")
 def fp():
-    result = send_campain('2e7142ac33',"Farepayment")
+    result = send_campain('69b7c86869',"Farepayment")
     return render_template('fp.html',result=result)
 
 @app.route("/fp_ok")
 def fp_ok():
-    result = send_campain_resolved('2e7142ac33',"Farepayment")
+    result = send_campain_resolved('69b7c86869',"Farepayment")
     return render_template('fp.html',result=result)
 
 
 @app.route("/rf")
 def rf():
-    result = send_campain('2e7142ac33','Rentalfront')
+    result = send_campain('e5ff54afa7','Rentalfront')
     return render_template('fp.html',result=result)
 
 @app.route("/rf_ok")
 def rf_ok():
-    result = send_campain_resolved('2e7142ac33',"Rentalfront")
+    result = send_campain_resolved('e5ff54afa7',"Rentalfront")
     return render_template('fp.html',result=result)
 
 @app.route("/eff")
@@ -46,12 +46,12 @@ def eff_ok():
 
 @app.route("/pbk")
 def pbk():
-    result = send_campain('2e7142ac33','PBK')
+    result = send_campain('4a3fe182e4','PBK')
     return render_template('fp.html',result=result)
 
 @app.route("/pbk_ok")
 def pbk_ok():
-    result = send_campain_resolved('2e7142ac33',"PBK")
+    result = send_campain_resolved('4a3fe182e4',"PBK")
     return render_template('fp.html',result=result)
 
 
